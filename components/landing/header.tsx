@@ -5,9 +5,14 @@ import { UserMenu } from "./user-menu";
 import { MobileNav } from "./mobile-nav";
 
 export async function Header() {
-  const supabase = await createClient();
-  const { data } = await supabase.auth.getClaims();
-  const user = data?.claims ? { email: data.claims.email as string } : null;
+  let user: { email: string } | null = null;
+  try {
+    const supabase = await createClient();
+    const { data } = await supabase.auth.getClaims();
+    user = data?.claims ? { email: data.claims.email as string } : null;
+  } catch {
+    // Supabase unavailable — render as logged-out
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-sm">

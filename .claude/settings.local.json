@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npx next dev:*)",
+      "Bash(timeout:*)",
+      "Bash(curl:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(node -e:*)",
+      "Bash(powershell -Command \"try { $r = Invoke-WebRequest -Uri ''http://localhost:3002/login'' -TimeoutSec 15 -UseBasicParsing; $r.StatusCode } catch { $_Exception.Message }\")",
+      "Bash(powershell:*)",
+      "Bash(taskkill:*)",
+      "Bash(ping:*)"
+    ]
+  }
+}

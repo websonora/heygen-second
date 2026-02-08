@@ -27,7 +27,7 @@ const tiers = [
   },
   {
     name: "Pro",
-    price: "$29",
+    price: "$15",
     description: "Best for professionals and teams",
     features: [
       "Unlimited AI avatars",
