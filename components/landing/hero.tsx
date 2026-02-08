@@ -7,7 +7,7 @@ export function Hero() {
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-            Create stunning AI videos in only 5 minutes
+            You can do your videos in less than 10 minutes
           </h1>
           <p className="max-w-lg text-lg text-muted-foreground">
             Transform your ideas into professional videos with AI-powered
